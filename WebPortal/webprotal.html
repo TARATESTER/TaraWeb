@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../Web_Projects/web-resources/animated.css">
+    <link rel="stylesheet" href="../Web_Projects/web-resources/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Web_Projects/web-resources/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../Web_Projects/web-resources/owlcarousel/dist/assets/owl.carousel.min.css">
+</head>
+<body>
+    
+    <div class="social-links">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-right">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="nav-bar sticky-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <img src="../Web_Projects/images/taraAungLogo.png" alt="">
+                </div>
+                <div class="col-8 nav-links">
+                    <ul class="list-inline">
+                        <li class="list-inline-item nav-items">
+                            <a href="../index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li class="dropdown list-inline-item nav-items">
+                            <a href="#" class="dropbtn">Products</a>
+                            <div class="dropdown-content">
+                                <a href="#">Tara Restraunt System</a>
+                                <hr>
+                                <a href="#">Tara Shop System</a>
+                                <hr>
+                                <a href="#">Tara Spa System</a>
+                                <hr>
+                                <a href="#">Tara Jetty System</a>
+                                <hr>
+                                <a href="#">Tara Clinic System</a>
+                                <hr>
+                                <a href="#">Tara Utility System</a>
+                            </div>
+                            </li>
+                        <li class="list-inline-item nav-items">
+                            <a href="#">
+                                Contact
+                            </a>
+                        </li>
+                        <li class="list-inline-item nav-items">
+                            <a href="#">
+                                About
+                            </a>
+                        </li>
+                        <li class="list-inline-item nav-items">
+                            <a href="#">
+                                Services
+                            </a>
+                        </li>
+                        <li class="list-inline-item nav-items">
+                            <a href="WebPortal/webprotal.html">
+                                Cloud Access
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-6">
+				<form action="remote/remote_home.html">
+					<div class="form-group">
+						<label for="shopName">Shop Name</label><br>
+						<input class="form-control" type="text" id="shop_name" name="shop_name">
+					</div>
+					<div class="form-group">
+						<label for="host_name">Host Name</label><br>
+						<input class="form-control" type="text" id="host_name" name="host_name">
+					</div>
+					<div class="form-group">
+						<label for="system_typ">Choose Your System Type</label>
+						<select class="form-control" id="system_type" name="system_type">
+							<option value="Food">Food</option>
+							<option value="Shop">SHOP</option>
+							<option value="Spa">SPA</option>
+						</select>
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				  </form>
+			</div>
+		</div>
+	</div>
+
+	<!-- <form action="remote/remote_home.html">
+	    <label for="shopName">Shop Name</label><br>
+	    <input type="text" id="shop_name" name="shop_name"><br>
+	    <label for="host_name">Host Name</label><br>
+	    <input type="text" id="host_name" name="host_name"><br>
+	    <label for="system_type">System Type</label>
+	    <select id="system_type" name="system_type">
+	        <option value="Food">Food</option>
+	        <option value="Shop">SHOP</option>
+	        <option value="Spa">SPA</option>
+	    </select>
+	    <input type="submit" value="Submit">
+	</form> -->
+
+	<!-- <script>
+		var form = document.querySelector('form');
+		var shop_name = document.querySelector('#shop_name');
+		var host_name = document.querySelector('#host_name');
+		var system_type = document.querySelector('#system_type');
+
+		form.addEventListener('submit', function (e) {
+			// prevent form submit
+			e.preventDefault();
+
+            var action_url = this.getAttribute('action');
+            
+            console.log(action_url);
+
+			// find and replace
+			var mod_url = action_url.replace(/ADD_HERE/g, system_type.value);
+			
+
+			window.location.replace(`${mod_url}?shop_name=${shop_name.value}&system_type=${system_type.value}&host_name=${host_name.value}`);
+		});
+	</script> -->
+</body>
+</html>

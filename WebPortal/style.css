@@ -98,3 +98,37 @@ h5 {
     box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
     border-color: #010240;
 }
+
+.choose_your_system_type p {
+    color: #010240;
+}
+
+.choose_your_system_type label img:hover {
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    border-radius: 100px;
+    transition-delay: 0.1s;
+    transition-duration: 0.3s;
+}
+
+/* HIDE RADIO */
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* IMAGE STYLES */
+  [type=radio] + img {
+    cursor: pointer;
+  }
+  
+  /* CHECKED STYLES */
+  [type=radio]:checked + img {
+    border-radius: 100px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+  }

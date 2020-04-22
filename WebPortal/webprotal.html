@@ -7,117 +7,81 @@
     <link rel="stylesheet" href="../Web_Projects/web-resources/animated.css">
     <link rel="stylesheet" href="../Web_Projects/web-resources/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../Web_Projects/web-resources/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../Web_Projects/web-resources/owlcarousel/dist/assets/owl.carousel.min.css">
 </head>
 <body>
     
-    <div class="social-links">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 text-right">
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    <div class="container text-center header">
+        <div class="row">
+            <div class="col-12">
+                <h1>Choose Your <span>System Type</span> To Access Cloud</h1>
             </div>
         </div>
     </div>
-   
-    <div class="nav-bar sticky-top">
-        <div class="container-fluid">
-            <div class="row">
+
+	<div class="choose_system_type">
+        <div class="container">
+            <div class="row text-center">                
                 <div class="col-4">
-                    <img src="../Web_Projects/images/taraAungLogo.png" alt="">
+                    <div class="card-body">
+                        <div class="logo text-center">
+                            <img src="Images/tara_shop.png" class="rounded-circle" width="100px" height="100px" alt="">
+                        </div>
+                        <h5 class="card-title">TARA <span>RESTRAUNT</span> SYSTEM</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                        <a href="restraunt_system_login.html" class="btn btn-custom">Restraunt System</a>
+                      </div>
                 </div>
-                <div class="col-8 nav-links">
-                    <ul class="list-inline">
-                        <li class="list-inline-item nav-items">
-                            <a href="../index.html">
-                                Home
-                            </a>
-                        </li>
-                        <li class="dropdown list-inline-item nav-items">
-                            <a href="#" class="dropbtn">Products</a>
-                            <div class="dropdown-content">
-                                <a href="#">Tara Restraunt System</a>
-                                <hr>
-                                <a href="#">Tara Shop System</a>
-                                <hr>
-                                <a href="#">Tara Spa System</a>
-                                <hr>
-                                <a href="#">Tara Jetty System</a>
-                                <hr>
-                                <a href="#">Tara Clinic System</a>
-                                <hr>
-                                <a href="#">Tara Utility System</a>
-                            </div>
-                            </li>
-                        <li class="list-inline-item nav-items">
-                            <a href="#">
-                                Contact
-                            </a>
-                        </li>
-                        <li class="list-inline-item nav-items">
-                            <a href="#">
-                                About
-                            </a>
-                        </li>
-                        <li class="list-inline-item nav-items">
-                            <a href="#">
-                                Services
-                            </a>
-                        </li>
-                        <li class="list-inline-item nav-items">
-                            <a href="WebPortal/webprotal.html">
-                                Cloud Access
-                            </a>
-                        </li>
-                    </ul>
+                <div class="col-4">
+                    <div class="card-body">
+                        <div class="logo">
+                            <img src="Images/tara_shop.png" class="rounded-circle"  width="100px" height="100px" alt="">
+                        </div>
+                        <h5 class="card-title">TARA <span>SHOP</span> SYSTEM</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                        <a href="shop_system_login.html" class="btn btn-custom">Shop System</a>
+                      </div>
+                </div>
+                <div class="col-4">
+                    <div class="card-body">
+                        <div class="logo text-center">
+                            <img src="Images/tara_shop.png" class="rounded-circle"  width="100px" height="100px" alt="">
+                        </div>
+                        <h5 class="card-title">TARA <span>SPA</span> SYSTEM</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                        <a href="spa_system_login.html" class="btn btn-custom">Spa System</a>
+                      </div>
                 </div>
             </div>
         </div>
     </div>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-6">
-				<form action="remote/remote_home.html">
-					<div class="form-group">
-						<label for="shopName">Shop Name</label><br>
-						<input class="form-control" type="text" id="shop_name" name="shop_name">
-					</div>
-					<div class="form-group">
-						<label for="host_name">Host Name</label><br>
-						<input class="form-control" type="text" id="host_name" name="host_name">
-					</div>
-					<div class="form-group">
-						<label for="system_typ">Choose Your System Type</label>
-						<select class="form-control" id="system_type" name="system_type">
-							<option value="Food">Food</option>
-							<option value="Shop">SHOP</option>
-							<option value="Spa">SPA</option>
-						</select>
-					</div>
-					<button type="submit" class="btn btn-primary">Submit</button>
-				  </form>
-			</div>
-		</div>
-	</div>
+    <!-- <form action="remote/remote_home.html">
+        <div class="form-group">
+            <label for="shopName">Shop Name</label><br>
+            <input class="form-control" type="text" id="shop_name" name="shop_name">
+        </div>
+        <div class="form-group">
+            <label for="host_name">Host Name</label><br>
+            <input class="form-control" type="text" id="host_name" name="host_name">
+        </div>
+        <div class="form-group">
+            <label for="system_typ">Choose Your System Type</label>
+            <select class="form-control" id="system_type" name="system_type">
+                <option value="Food">Food</option>
+                <option value="Shop">SHOP</option>
+                <option value="Spa">SPA</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form> -->
 
 	<!-- <form action="remote/remote_home.html">
 	    <label for="shopName">Shop Name</label><br>

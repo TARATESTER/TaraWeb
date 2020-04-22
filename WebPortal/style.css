@@ -112,21 +112,18 @@ h5 {
     transition-duration: 0.3s;
 }
 
-/* HIDE RADIO */
 [type=radio] { 
     position: absolute;
     opacity: 0;
     width: 0;
     height: 0;
-  }
-  
-  /* IMAGE STYLES */
-  [type=radio] + img {
+}
+
+[type=radio] + img {
     cursor: pointer;
-  }
-  
-  /* CHECKED STYLES */
-  [type=radio]:checked + img {
+}
+
+[type=radio]:checked + img {
     border-radius: 100px;
     -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);

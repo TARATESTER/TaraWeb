@@ -51,7 +51,9 @@ h2 {
     transition-duration: 0.3s;
     transition-delay: 0.1s;
 }
-
+.choose_system_type .col-sm-12 {
+    margin-bottom: 10px;
+}
 .system_option {
     display: none;
 }

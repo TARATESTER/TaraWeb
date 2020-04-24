@@ -28,7 +28,7 @@ function init() {
             httpGetAsync("https://tarabartest.firebaseio.com/Shops/" + shopName + "/cookies/" + shopName + "-" + hostName + ".json",
                 function success(response) {
                     var params = "?host_name=" + hostName + "&sn=" + shopName;
-                    params += "&icft=" + (response ? response.isClientFirstTime : "false");
+                    params += "&icft=" + (response ? response.isClientFirstTime : "true");
                     window.location.replace(serverPublicUrl + params);
                 }, function error(errorMsg) {
                     showErrorMessage(errorMsg);

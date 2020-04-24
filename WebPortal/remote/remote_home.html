@@ -1,5 +1,5 @@
 <!--
-  ~ Copyright (c) 2015 - 2019 - Tara Aung Co., Ltd - All Rights Reserved.
+  ~ Copyright (c) 2015 - 2020 - Tara Aung Co., Ltd - All Rights Reserved.
   ~  Tara Systems Project - Proprietary and confidential. www.taraaung.com
   -->
 
@@ -25,6 +25,15 @@
         #message {
             margin-top: 20px;
         }
+
+        #close_btn {
+            background: rgb(200, 219, 238);
+            color: black;
+            border-radius: 10px;
+            width: 100px;
+            height: 30px;
+            display: none;
+        }
     </style>
 </head>
 
@@ -35,6 +44,8 @@
     <script type="text/javascript">
         init();
     </script>
+
+    <button class="btn" id="close_btn" onclick="javacript:history.back();">Back</button>
 </body>
 
 </html>

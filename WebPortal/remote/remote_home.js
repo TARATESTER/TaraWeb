@@ -41,9 +41,9 @@ function init() {
                                 "2. Check that Cloud Access status is online at Server Logs.</br>" +
                                 "3. At server machine, Click on \"Restart Cloud Access\" (Home Screen -> About -> Server Logs).</br>" +
                                 "4. Make sure Server and Client date and time are correct and the same.</br></br>" +
-                                "1. Cloud Services မရတော့တဲ့အခါServer နဲ့ Client စက်တွေမှာ Internet ရှိမရှိစစ်ပေးပါ။</br>" +
+                                "1. Cloud Services မရတော့တဲ့အခါ Server နဲ့ Client စက်တွေမှာ Internet ရှိမရှိစစ်ပေးပါ။</br>" +
                                 "2. Server စက်ရဲ့ Server Log မှာ online ဖြစ်ပီးစိမ်းနေလား စစ်ပေးပါ။</br>" +
-                                "3. Server စက်ရဲ့ about icon ထဲက server log တွင် \"Restart Cloud Access\" ကို နှိပ်၍ Cloud Service ကို restartချပေးပါ။</br>" +
+                                "3. Server စက်ရဲ့ about icon ထဲက server log တွင် \"Restart Cloud Access\" ကို နှိပ်၍ Cloud Service ကို restart ချပေးပါ။</br>" +
                                 "4. Server နှင့် Client စက်များ၏ အချိန် တူညီ‌ကြောင်း ကိုစစ်ပေးပါ။</br>");
                         });
                 }, function error(errorMsg) {
@@ -56,11 +56,11 @@ function init() {
 
 function showErrorMessage(msg) {
     loadingImg.style.display = "none";
-    document.getElementById("close_btn").style.display = "block";
+    document.getElementById("back_btn").style.display = "block";
     infoMessage.style.color = "red";
     infoMessage.style["font-size"] = "large";
     infoMessage.style["font-family"] = "cursive";
-    infoMessage.style["line-height"] = "40px";
+    infoMessage.style["line-height"] = "35px";
     infoMessage.innerHTML = msg;
 }
 

@@ -43,13 +43,13 @@ function init() {
                         function success(response) {
                             window.location.replace(serverPublicUrl + params);
                         }, function error(errorMsg) {
-                            showErrorMessage(null, shopName, hostName, systemType);
+                            showErrorMessage("Sorry, server cannot be reached!", shopName, hostName, systemType);
                         });
                 }, function error(errorMsg) {
-                    showErrorMessage(null, shopName, hostName, systemType);
+                    showErrorMessage("Sorry, client information cannot be fetched!", shopName, hostName, systemType);
                 });
         }, function error(errorMsg) {
-            showErrorMessage(null, shopName, hostName, systemType);
+            showErrorMessage("Sorry, server domain cannot be fetched!", shopName, hostName, systemType);
         });
 }
 
@@ -65,7 +65,7 @@ function showErrorMessage(msg, shopName, hostName, systemType) {
     infoMessage.style["line-height"] = "35px";
     infoMessage.innerHTML =
         (msg ? msg + "</br></br>" : "") +
-        "ShopName = " + shopName + "</br>HostName = " + hostName + "</br>Systemtype = " + systemType + "</br>" +
+        "ShopName = " + (shopName || "\" \"") + "</br>HostName = " + (hostName || "\" \"") + "</br>SystemType = " + (systemType || "\" \"") + "</br>" +
         "Please confirm above information is correct!</br></br>" +
         "1. Please check internet connection is ok at both Server and client machine.</br>" +
         "2. Check that Cloud Access status is online at Server Logs.</br>" +

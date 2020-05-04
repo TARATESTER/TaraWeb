@@ -22,9 +22,9 @@
 
                     <h5 class="card-title">Login in to your <span>Cloud Server</span></h5>
 
-                    <form action="remote/remote_home.html">
+                    <form action="remote/remote_home.html" id="webPortalForm">
                         <div class="form-group">
-                            <input tabindex="1" class="form-control needs-validation" placeholder="Type Your Shop Name" type="text" id="shop_name" name="shop_name">
+                            <input tabindex="1" class="form-control needs-validation" placeholder="Type Your Shop Name" type="text" id="shop_name" name="shop_name" autofocus>
                         </div>
                         <div class="form-group">
                             <input tabindex="2" class="form-control" placeholder="Host Name" type="text" id="host_name" name="host_name">
@@ -70,6 +70,36 @@
     </div>
 
     <script src="wow.min.js"></script>
+    <script src="/web-resource/jquery.validate.min.js"></script>
+    <script src="/web-resource/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script>
+        // just for the demos, avoids form submit
+        jQuery.validator.setDefaults({
+          debug: true,
+          success: "valid"
+        });
+        $( "#webPortalForm" ).validate({
+          rules: {
+            shop_name: {
+                required: true
+            },
+            host_name: {
+                required: true
+            },
+            system_type: {
+                required: true
+            }
+          },
+          messages: {
+            shop_name: "Please Enter Your Shop Name",
+            host_name: "Please Enter Your Host Name",
+            system_type: "Please Choose Your System Type"
+         }
+        });
+        </script>
     <script>
         new WOW().init();
     </script>

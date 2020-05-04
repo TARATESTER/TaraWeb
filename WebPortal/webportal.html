@@ -75,31 +75,47 @@
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
     <script>
-        // just for the demos, avoids form submit
-        jQuery.validator.setDefaults({
-          debug: true,
-          success: "valid"
+        $(function () {
+            // Modify default settings for jQuery Validation
+            jQuery.validator.setDefaults({
+                success: "valid"
+            });
+            // Jquery Validate
+            var $form = $("#webPortalForm");
+
+            $form.validate({
+                rules: {
+                    shop_name: {
+                        required: true,
+                        minlength: 3,
+                        maxlength: 20
+                    },
+                    host_name: {
+                        required: true,
+                        minlength: 3
+                    },
+                    system_type: {
+                        selectValue: true
+                    }
+                },
+                messages: {
+                    shop_name: {
+                        required: "Please Enter Your Shop Name",
+                        minlength: $.validator.format("Please enter at least {0} characters."),
+                        maxlength: $.validator.format("Please enter no more than {0} characters.")
+                    },
+                    host_name: {
+                        required: "Please Enter Your Host Name ",
+                    },
+                    system_type: {
+                        required: "Please select System type."
+                    }
+                }
+            })
         });
-        $( "#webPortalForm" ).validate({
-          rules: {
-            shop_name: {
-                required: true
-            },
-            host_name: {
-                required: true
-            },
-            system_type: {
-                required: true
-            }
-          },
-          messages: {
-            shop_name: "Please Enter Your Shop Name",
-            host_name: "Please Enter Your Host Name",
-            system_type: "Please Choose Your System Type"
-         }
-        });
-        </script>
+    </script>
     <script>
         new WOW().init();
     </script>

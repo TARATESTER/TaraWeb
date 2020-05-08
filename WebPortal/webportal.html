@@ -84,10 +84,8 @@
             jQuery.validator.setDefaults({
                 success: "valid"
             });
-            // Jquery Validate
-            var $form = $("#webPortalForm");
 
-            $form.validate({
+            $( "#webPortalForm" ).validate({
                 rules: {
                     shop_name: {
                         required: true

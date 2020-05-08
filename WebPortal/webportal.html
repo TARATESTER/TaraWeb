@@ -32,7 +32,7 @@
                         <hr>
                         <div class="choose_your_system_type">
                             <h5>Choose Your System Type</h5>
-                           <div class="container">
+                            <div class="container">
                                <div class="row">
                                    <div class="col-4 text-center">
                                     <label>
@@ -55,6 +55,9 @@
                                             <p>Spa</p>
                                         </label> 
                                     </div>
+                               </div>
+                               <div class="row">
+                                   <p></p>
                                </div>
                            </div>
                         </div>
@@ -80,12 +83,10 @@
 
     <script>
         $(function () {
-            // Modify default settings for jQuery Validation
-            jQuery.validator.setDefaults({
-                success: "valid"
-            });
+            // Jquery Validate
+            var $form = $("#webPortalForm");
 
-            $( "#webPortalForm" ).validate({
+            $form.validate({
                 rules: {
                     shop_name: {
                         required: true
@@ -94,7 +95,7 @@
                         required: true
                     },
                     system_type: {
-                        required: true
+                        selectValue: true
                     }
                 },
                 messages: {

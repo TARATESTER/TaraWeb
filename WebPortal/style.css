@@ -182,3 +182,9 @@ h5 {
 #exit_logo:hover{
 	color: red;
 }
+.fa-times {
+    padding-top: 10px;
+}
+.fa-question-circle:hover {
+    cursor: pointer;
+}

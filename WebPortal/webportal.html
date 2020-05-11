@@ -4,11 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="../Web_Projects/web-resources/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="web-resource/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="animate.css">
 </head>
 <body>
+
+    <!-- Navigation_Bar -->
+	<div class="nav mt-5">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="nav text-left">
+					<i class="fas fa-bars fa-2x fixed-top pl-4 pt-4" style="color: white;" id="menu_icon"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Navigation_Bar -->
+
+<!-- Toggle -->
+	<div class="toggle_warp toggle_overlay" id="toggle_box">
+		<div class="row">
+			<div class="col-6 col-lg-8 pt-3 pb-4 pl-5">
+				<h1>Help</h1>
+			</div>
+			<div class="col-6 col-lg-4 text-right pt-4 pb-4 pr-5">
+				<i class="fas fa-times fa-2x" id="exit_logo"></i>
+			</div>
+		</div>
+	</div>
+<!-- Toggle -->
 
     <div class="container wapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s"">
         <div class="row text-center">                
@@ -24,7 +50,7 @@
 
                     <form action="remote/remote_home.html" id="webPortalForm">
                         <div class="form-group">
-                            <input tabindex="1" class="form-control needs-validation" placeholder="Type Your Shop Name" type="text" id="shop_name" name="shop_name" autofocus>
+                            <input tabindex="1" class="form-control needs-validation" placeholder="Type Your Client Name" type="text" id="shop_name" name="shop_name" autofocus>
                         </div>
                         <div class="form-group">
                             <input tabindex="2" class="form-control" placeholder="Host Name" type="text" id="host_name" name="host_name">
@@ -59,7 +85,6 @@
                            </div>
                         </div>
                         <div class="choose_your_system_type_error_replacement">
-
                         </div>
                         <hr>
                         <button type="submit" tabindex="6" class="btn-custom btn-login form-control">Submit</button>
@@ -74,12 +99,13 @@
         </div>
     </div>
 
+    
+
     <script src="wow.min.js"></script>
-    <script src="/web-resource/jquery.validate.min.js"></script>
     <script src="jquery.js"></script>
+    <script src="web-resource/jquery-ui-1.12.1/jquery-ui.js"></script>
     <script src="jquery.validate.min.js"></script>
     <script src="additional-methods.min.js"></script>
-    <script src="/web-resource/bootstrap.min.js"></script>
 
     <script>
         $(function () {
@@ -122,8 +148,14 @@
     </script>
     <script>
         new WOW().init();
-
-        $('.collapse').collapse()
+    </script>
+    <script>
+        $('#menu_icon').click(function(){
+            $('#toggle_box').toggle('slide', {direction: 'left'}, 1000);
+        });
+        $('#exit_logo').click(function(){
+            $('#toggle_box').toggle('slide', {direction: 'left'}, 1000);
+        });
     </script>
     
 </body>

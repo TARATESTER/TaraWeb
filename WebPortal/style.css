@@ -138,3 +138,47 @@ h5 {
     margin-bottom: 0px;
     padding-bottom: 10px;
 }
+
+.toggle_overlay{
+	position: absolute;
+	right: 0;
+    top: 0;
+    left: 0;
+	height: 1010px;
+	width: 30%;
+	display: none;
+	z-index: 1;
+}
+.toggle_overlay > .row{
+    margin: 0;
+}
+.toggle_warp{
+	background: white;
+	color: #010240;
+}
+.toggle_warp h1{
+    color: #010240;
+    text-align: center;
+}
+.warp_box{
+	border: solid 1px white;
+	background: #f2f2f2;
+	color: #010240;
+	font-size: 1.5rem;
+}
+.warp_box_active{
+	color: #010240;
+	background-color: rgb(111, 21, 226);
+}
+.warp_toggle_icon{
+	padding-top: 90px;
+	padding-bottom: 90px; 
+}
+.warp_box:hover{
+	background-color: rgb(111, 21, 226);
+	color: white;
+	transition: 0.5s;
+}
+#exit_logo:hover{
+	color: red;
+}

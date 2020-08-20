@@ -272,7 +272,7 @@
 
 
 <script>
-    //JUST AN EXAMPLE, PLEASE USE YOUR OWN PICTURE!
+    
     var imageAddr = "http://www.kenrockwell.com/contax/images/g2/examples/31120037-5mb.jpg"; 
     var downloadSize = 4995374; //bytes
 
@@ -326,7 +326,7 @@
             var bitsLoaded = downloadSize * 8;
             var speedBps = (bitsLoaded / duration).toFixed(2);
             var speedKbps = (speedBps / 1024).toFixed(2);
-            var speedMbps = (speedKbps / 1024).toFixed(2);
+            var speedMbps = (speedKbps / 1024 * 8).toFixed(2);
             ShowProgressMessage([
                 "Your connection speed is:",
                 speedMbps + " Mbps"
